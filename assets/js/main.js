@@ -1,3 +1,26 @@
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close');
+
+      if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            console.log('Menu burger ');
+            navMenu.classList.add('show-menu');
+        });
+    }
+    
+    if (navClose) {
+        navClose.addEventListener('click', () => {
+            console.log('Fermeture du menu ');
+            navMenu.classList.remove('show-menu');
+        });
+    }
+    
+
+
+
+
 /*=============== IMAGE GALLERY ===============*/
 function imgGallery() {
     const mainImg = document.querySelector('.details__img'); 
